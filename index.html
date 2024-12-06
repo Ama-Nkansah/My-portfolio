@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Project</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -20,28 +20,45 @@
 </head>
 <body>
 
-<header>
-  <nav id="nav-bar">
+<header class="absolute inset-x-0 top-0 z-50">
+  <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+
     <!--Icon and logo to navigate through home-->
-    <div>
-      <a href="#home"><i class="fa-solid fa-laptop"></i>
-       <h3>Ama</h3> 
+    <div class="flex lg:flex-1">
+      <a href="#home" class="-m-1.5 p-1.5"><i class="fa-solid fa-laptop"><h3>Ama</h3></i> 
       </a>
     </div>
 
-<!--Hamburger icon and list items -->
-   <button id="hamburger-icon">
+<!--Hamburger icon-->
+<div class="flex lg:hidden">
+  <button id="hamburger-icon" class="-m-2.5     inline-flex items-center          justify-center rounded-md p-2.5 text-gray-700">
       <i class="fa-solid fa-bars" id="hamburger"></i>
+      <!--close button-->
+      <i class="fa-solid fa-square-xmark"></i>
    </button>
+</div>
+   
+    <div class= "hidden lg:flex lg:gap-x-12 ">
+      <a  href="#home" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+      <a  href="#about" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">About</a>
+      <a  href="#skills" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Skills</a>
+      <a  href="#projects" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
+      <a  href="#testemonials" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Testemonials</a>
+      <a  href="#contact" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+    </div>
 
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Projects</li>
-      <li>Testemonials</li>
-      <li>Contact</li>
-    </ul>
+    <div id="sidebar" class="fixed inset-0 z-40 bg-gray-800 bg-opacity-75 hidden transform translate-x-full transition-transform duration-300">
+      <div class="w-64 bg-white h-full p-6">
+        <ul class="flex flex-col space-y-4 mt-6">
+          <li><a href="#home" class="text-gray-900">Home</a></li>
+          <li><a href="#about" class="text-gray-900">About</a></li>
+          <li><a href="#skills" class="text-gray-900">Skills</a></li>
+          <li><a href="#projects" class="text-gray-900">Projects</a></li>
+          <li><a href="#testimonials" class="text-gray-900">Testimonials</a></li>
+          <li><a href="#contact" class="text-gray-900">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
   
