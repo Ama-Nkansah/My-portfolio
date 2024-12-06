@@ -24,9 +24,9 @@
   <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
 
     <!--Icon and logo to navigate through home-->
-    <div class="flex lg:flex-1">
-      <a href="#home" class="-m-1.5 p-1.5"><i class="fa-solid fa-laptop"><h3>Ama</h3></i> 
-      </a>
+    <div class="flex lg:flex-1 justify-center">
+      <a href="#home" class="-m-1.5 p-1.5 "><i class="fa-solid fa-laptop"><h3 class="pl-6 ">Ama</h3></i> 
+      </a> 
     </div>
 
 <!--Hamburger icon-->
@@ -34,10 +34,11 @@
   <button id="hamburger-icon" class="-m-2.5     inline-flex items-center          justify-center rounded-md p-2.5 text-gray-700">
       <i class="fa-solid fa-bars" id="hamburger"></i>
       <!--close button-->
-      <i class="fa-solid fa-square-xmark"></i>
+      <i id="close-button" class="fa-solid fa-square-xmark hidden"></i>
    </button>
 </div>
    
+ <!--navigation links shown on bigger screens but hidden on smaller screens-->
     <div class= "hidden lg:flex lg:gap-x-12 ">
       <a  href="#home" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
       <a  href="#about" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">About</a>
@@ -47,7 +48,8 @@
       <a  href="#contact" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
     </div>
 
-    <div id="sidebar" class="fixed inset-0 z-40 bg-gray-800 bg-opacity-75 hidden transform translate-x-full transition-transform duration-300">
+    <!-- sidebar for smaller screens-->
+    <div id="sidebar" class="fixed inset-0 z-40 bg-gray-800 bg-opacity-75 transform translate-x-full transition-transform duration-300 ease-in-out">
       <div class="w-64 bg-white h-full p-6">
         <ul class="flex flex-col space-y-4 mt-6">
           <li><a href="#home" class="text-gray-900">Home</a></li>
