@@ -15,8 +15,6 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.add("hidden");
   closeButton.classList.remove("hidden");
   closeButton.classList.add("flex");
-  overlay.classList.remove("hidden");
-  overlay.classList.add("flex");
 });
 
 closeButton.addEventListener("click", () => {
