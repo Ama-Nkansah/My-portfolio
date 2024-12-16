@@ -19,30 +19,21 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="absolute inset-x-0 top-0 z-50">
+    <header class="z-50  bg-orange-400 h-16">
       <nav
         aria-label="Global"
-        class="flex items-center justify-between p-6 lg:px-8"
+        class="flex items-center justify-between p-4 md:px-8" id="nav"
       >
         <!--Icon and logo to navigate through home-->
-        <div class="flex lg:flex-1 justify-start">
-          <a href="#home" class="-m-1.5 p-1.5"
-            ><i class="fa-solid fa-laptop"><h3 class="pl-6">Ama</h3></i>
+        <div class="flex lg:flex-1 self-start" id="logo">
+          <a href="#home" class="inline-flex"
+            ><i class="fa-solid fa-laptop pt-1 "></i>
+            <h3 class="pl-2">Ama</h3>
           </a>
         </div>
 
-        <!--Hamburger icon-->
-        <div class="flex lg:hidden">
-          <button title="menu" type="button"
-            id="hamburger-button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <i class="fa-solid fa-bars" id="hamburger"></i>
-          </button>
-        </div>
-
         <!--navigation links shown on bigger screens but hidden on smaller screens-->
-        <div class="hidden lg:flex justify-center lg:gap-x-12">
+        <div class="hidden md:flex justify-center md:gap-x-10 lg:gap-x-12">
           <a
             href="#home"
             class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50"
@@ -75,16 +66,40 @@
           >
         </div>
 
+        <!--overlay opacity-->
+          <div id="overlay" class="hidden opacity-50 bg-grey z-10">
+
+          </div>
+
+
+
+        <!--Hamburger icon-->
+        <div class="flex md:hidden">
+          <button title="menu" type="button"
+            id="hamburger-button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          >
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+          </button>
+        </div>
+
         <!-- sidebar for smaller screens-->
-
         <div id="sidebar" class="hidden">
-          <div class="w-64 bg-teal-300 h-full p-6">
-
-            <div class="hidden justify-end" id="close-button">
+          <div class="w-96 bg-teal-300 h-screen p-6 rounded-sm">
+         <!-- my icon and close button-->
+          <div class="flex justify-between">
+            <a href="#home" class="inline-flex"
+            ><i class="fa-solid fa-laptop pt-1"></i>
+            <h3 class="pl-2">Ama</h3>
+            </a>
+           <!-- close button -->
+            <div class="hidden " id="close-button">
               <i class="fa-solid fa-square-xmark"></i>
             </div>
+         </div>
 
-            <ul class="flex flex-col space-y-4 mt-6">
+         <div>
+            <ul class="flex flex-col space-y-4 pt-4 ">
               <li><a href="#home" class="text-gray-900">Home</a></li>
               <li><a href="#about" class="text-gray-900">About</a></li>
               <li><a href="#skills" class="text-gray-900">Skills</a></li>
@@ -95,6 +110,7 @@
               <li><a href="#contact" class="text-gray-900">Contact</a></li>
             </ul>
           </div>
+
         </div>
       </nav>
     </header>
