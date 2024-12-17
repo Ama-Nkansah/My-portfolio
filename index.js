@@ -3,7 +3,7 @@ const hamburgerButton = document.getElementById("hamburger-button");
 const closeButton = document.getElementById("close-button");
 const navBar = document.getElementById("nav");
 const logo1 = document.getElementById("logo");
-const overlay = document.getElementById("overlay");
+
 
 
 hamburgerButton.addEventListener("click", () => {

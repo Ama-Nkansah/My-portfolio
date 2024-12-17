@@ -16,23 +16,22 @@
         },
       };
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Marck+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="header" class="z-50 h-16">
+    <header id="header" id="home" class="z-50 h-16">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
       >
-        <!--Icon and logo to navigate through home-->
+        <!--Icon and logo-->
         <div class="flex lg:flex-1 self-start" id="logo">
-          <a href="#home" class="inline-flex"
-            ><i class="fa-solid fa-laptop pt-1 "></i>
-            <h3 class="pl-2">Ama</h3>
-          </a>
+          <i class="fa-solid fa-laptop pt-1"></i>
+          <h3 class="pl-2">Ama</h3>
         </div>
 
         <!--navigation links shown on bigger screens but hidden on smaller screens-->
@@ -69,18 +68,11 @@
           >
         </div>
 
-        <!--overlay opacity-->
-          <div id="overlay" class="hidden opacity-50 bg-grey z-10">
-
-          </div>
-
-
-
         <!--Hamburger icon-->
         <div class="flex md:hidden">
           <button title="menu" type="button"
             id="hamburger-button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-4  text-red-950"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-4 text-red-950"
           >
             <i class="fa-solid fa-bars" id="hamburger"></i>
           </button>
@@ -90,7 +82,7 @@
         <div id="sidebar" class="hidden transition-all duration-1000">
           <div id="sidebar-css" class="w-96 h-screen rounded-sm z-10">
          <!-- my icon and close button-->
-          <div id="sidebar-navbar" class="flex justify-between p-5">
+          <div id="sidebar-navbar" class="flex justify-between p-3">
             <a href="#home" class="inline-flex"
             ><i class="fa-solid fa-laptop pt-1"></i>
             <h3 class="pl-2">Ama</h3>
@@ -102,7 +94,7 @@
          </div>
 
          <div>
-            <ul class="flex flex-col space-y-4 p-4 ">
+            <ul class="flex flex-col space-y-4 pt-4 ">
               <li><a href="#home" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Home</a></li>
               <li><a href="#about" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">About</a></li>
               <li><a href="#skills" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Skills</a></li>
@@ -119,15 +111,16 @@
     </header>
 
     <!-- home section -->
-    <section id="home">
+    <section id="home-section">
       <!-- my heading -->
       <div id="hero-content" class="h-screen flex">
-        <div class="p-5">
-         <h1 class="text-4xl font-serif font-normal">Hi,<span>Ama Nkansah</span> here</h1> 
+        <div class="p-5 m-32 ">
+          <h1 class="text-5xl animate__animated animate__bounce flex justify-start mb-10 font-serif font-normal">Welcome to my Website</h1>
+         <h2 class="text-6xl font-serif font-normal">Hi,<span class="text-8xl animate__animated animate__bounce">Ama Nkansah</span> here</h2> 
          <p class="font-serif font-normal">A software Engineer and a Content Creator </p>
         </div>
         <div class="m-6 ml-2 flex justify-end">
-          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-gray-400 border-4 sm:w-4/5">
+          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 sm:ml-52 lg:m-28 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5">
         </div>
         
 

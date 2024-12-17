@@ -11,7 +11,7 @@
   background-color:#FF885B;
 }
 
-#hero-content span{
+  span{ 
   font-family: "Agu Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -20,8 +20,14 @@
   font-variation-settings:
     "MORF" 0;
   color:teal;
-}
+ } 
 
 #mine-image{
   height:400px
+}
+
+#home-section{
+  background-image: url(./images/coconut\ pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
