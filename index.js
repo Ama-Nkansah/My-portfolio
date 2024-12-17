@@ -20,5 +20,5 @@ hamburgerButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
 sideBar.classList.add("hidden");
 hamburgerButton.classList.remove("hidden");
-hamburgerButton.classList.add("inline-flex");
+hamburgerButton.classList.add("inline-flex","pr-10");
 });

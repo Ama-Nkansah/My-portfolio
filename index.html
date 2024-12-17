@@ -17,9 +17,12 @@
       };
     </script>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Marck+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="z-50  bg-orange-400 h-16">
+    <header id="header" class="z-50 h-16">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
@@ -36,32 +39,32 @@
         <div class="hidden md:flex justify-center md:gap-x-10 lg:gap-x-12">
           <a
             href="#home"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >Home</a
           >
           <a
             href="#about"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >About</a
           >
           <a
             href="#skills"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >Skills</a
           >
           <a
             href="#projects"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >Projects</a
           >
           <a
             href="#testemonials"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >Testemonials</a
           >
           <a
             href="#contact"
-            class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-50 p-1 rounded-sm"
+            class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
             >Contact</a
           >
         </div>
@@ -77,7 +80,7 @@
         <div class="flex md:hidden">
           <button title="menu" type="button"
             id="hamburger-button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-4  text-red-950"
           >
             <i class="fa-solid fa-bars" id="hamburger"></i>
           </button>
@@ -85,9 +88,9 @@
 
         <!-- sidebar for smaller screens-->
         <div id="sidebar" class="hidden transition-all duration-1000">
-          <div class="w-96 bg-teal-300 h-screen p-6 rounded-sm">
+          <div id="sidebar-css" class="w-96 h-screen rounded-sm z-10">
          <!-- my icon and close button-->
-          <div class="flex justify-between">
+          <div id="sidebar-navbar" class="flex justify-between p-5">
             <a href="#home" class="inline-flex"
             ><i class="fa-solid fa-laptop pt-1"></i>
             <h3 class="pl-2">Ama</h3>
@@ -99,24 +102,37 @@
          </div>
 
          <div>
-            <ul class="flex flex-col space-y-4 pt-4 ">
-              <li><a href="#home" class="text-gray-900 hover:bg-gray-50 p-1 rounded-sm">Home</a></li>
-              <li><a href="#about" class="text-gray-900 hover:bg-gray-50 p-1 rounded-sm">About</a></li>
-              <li><a href="#skills" class="text-gray-900 hover:bg-gray-50 p-1 rounded-sm">Skills</a></li>
-              <li><a href="#projects" class="text-gray-900 hover:bg-gray-50 p-1 rounded-sm">Projects</a></li>
+            <ul class="flex flex-col space-y-4 p-4 ">
+              <li><a href="#home" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Home</a></li>
+              <li><a href="#about" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">About</a></li>
+              <li><a href="#skills" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Skills</a></li>
+              <li><a href="#projects" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Projects</a></li>
               <li>
-                <a href="#testimonials" class="text-gray-900 hover:bg-gray-50 p-1 rounded-sm">Testimonials</a>
+                <a href="#testimonials" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Testimonials</a>
               </li>
-              <li><a href="#contact" class="text-gray-900  hover:bg-gray-50 p-1 rounded-sm">Contact</a></li>
+              <li><a href="#contact" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Contact</a></li>
             </ul>
           </div>
-
+          </div>
         </div>
       </nav>
     </header>
 
-    <section>
-      
+    <!-- home section -->
+    <section id="home">
+      <!-- my heading -->
+      <div id="hero-content" class="h-screen flex">
+        <div class="p-5">
+         <h1 class="text-4xl font-serif font-normal">Hi,<span>Ama Nkansah</span> here</h1> 
+         <p class="font-serif font-normal">A software Engineer and a Content Creator </p>
+        </div>
+        <div class="m-6 ml-2 flex justify-end">
+          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-gray-400 border-4 sm:w-4/5">
+        </div>
+        
+
+
+      </div>
     </section>
 
 

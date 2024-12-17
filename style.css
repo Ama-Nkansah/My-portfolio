@@ -1,0 +1,27 @@
+#header{
+  background-color:#FF885B;
+}
+
+#sidebar-css{
+  background-color:#FFE5CF;
+  
+}
+
+#sidebar-navbar{
+  background-color:#FF885B;
+}
+
+#hero-content span{
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+  font-variation-settings:
+    "MORF" 0;
+  color:teal;
+}
+
+#mine-image{
+  height:400px
+}
