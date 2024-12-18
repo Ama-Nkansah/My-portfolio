@@ -13,6 +13,7 @@ I am a passionate front-end developer with experience in HTML, CSS, JavaScript, 
 - JavaScript
 - JQuery
 - Tailwind CSS
+- Animate.CSS
 
 ## Features
 
