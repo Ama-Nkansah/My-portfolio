@@ -11,6 +11,14 @@
   background-color:#FF885B;
 }
 
+#welcome-message{
+  text-shadow: 1px 1px 2px wheat;
+}
+
+#my-work{
+  text-shadow: 1px 1px 2px wheat;
+}
+
   span{ 
   font-family: "Agu Display", serif;
   font-optical-sizing: auto;
