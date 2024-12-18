@@ -17,10 +17,11 @@
       };
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Marck+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <header id="header" id="home" class="z-50 h-16">
@@ -122,35 +123,112 @@
         <div class="m-6 ml-2 flex justify-end">
           <img src="images/mine-pic.jpg" id="mine-image" class="p-3 sm:ml-52 lg:m-28 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
         </div>
-        
-        <section id="about" class="mt-96">
-          <h1>About Me</h1>
-          <P>
-            <div>
-              As a software engineer with a strong focus on front-end development, 
-             I am passionate about building responsive, user-friendly, and visually engaging digital experiences. My expertise lies in creating modern interfaces that
-             seamlessly integrate design and functionality. <br>
-             </div>
-
-             <div>Proficient in technologies like React, Node.js, Tailwind, and Bootstrap, I specialize in crafting elegant, 
-               maintainable solutions that solve real-world problems. While my primary focus is on front-end development, my knowledge of Node.js allows me to collaborate
-               effectively across the entire development stack.<br>
-              </div>
-            
-              <div>
-                 I am committed to continuous learning and innovation,
-                 ensuring that I stay at the forefront of the ever-evolving
-                 tech landscape. Whether contributing to impactful projects or exploring new technologies, my goal is to deliver high-quality solutions that make a meaningful impact.  
-                 Let’s connect to create something extraordinary together!
-              </div>
-              
-          </P>
-
-        </section>
-
-
       </div>
     </section>
+
+    <!-- about section -->
+    <section id="about" class="m-10 grid">
+        <h1 id="about-heading" class="mb-8 text-5xl text-red-950 text-center">About Me</h1>
+        <div id="font-about" class="text-wrap grid grid-rows-1 grid-cols-3 gap-4">
+          <p>
+            As a software engineer with a strong focus on front-end development, 
+            I am passionate about building responsive, user-friendly, and visually engaging digital experiences. My expertise lies in creating modern interfaces that
+            seamlessly integrate design and functionality. <br>
+          </p>
+
+          <p>
+            Proficient in technologies like React, Node.js, Tailwind, and Bootstrap, I specialize in crafting elegant, 
+            maintainable solutions that solve real-world problems. While my primary focus is on front-end development, my knowledge of Node.js allows me to collaborate
+            effectively across the entire development stack.<br>
+          </p>
+              
+         <p>
+           I am committed to continuous learning and innovation,
+           ensuring that I stay at the forefront of the ever-evolving
+           tech landscape. Whether contributing to impactful projects or exploring new technologies, my goal is to deliver high-quality solutions that make a meaningful impact.  
+           Let’s connect to create something extraordinary together!
+         </p>
+        </div>
+      </section>
+
+      <!-- skills section -->
+        <section id="skills" class="grid ">
+          <div id="skills-heading" class="h-auto">
+           <h1 id="skills-heading1" class="py-2 text-5xl text-red-950 text-center">Skills</h1>
+          </div>
+
+          <!--skills icons -->
+          <div class="grid grid-rows-2 grid-cols-10 gap-4 ">
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-html5-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-css3-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+              
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-tailwindcss-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+              
+            <ul class="list-none m-5">
+              <li>
+                <i class="devicon-bootstrap-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+              
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-javascript-plain colored block text-7xl"></i>
+              </li>
+            </ul>
+              
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-jquery-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-react-original-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-nodejs-plain-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+
+            <ul class="list-none m-5">
+              <li>
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"/>
+              </li>
+            </ul>
+            
+            <ul class="list-none m-5">
+              <li>
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+              </li>
+            </ul>
+
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-github-original-wordmark colored block text-7xl"></i>
+              </li>
+            </ul>
+
+          </div>
+
+        </section>
+      
 
 
 

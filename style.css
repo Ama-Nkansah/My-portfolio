@@ -39,3 +39,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#about-heading{
+  text-shadow: 1px 1px 2px wheat;
+}
+
+#font-about{
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#skills-heading{
+  background-color:#FF885B;
+}
+
+#skills-heading1{
+  text-shadow: 1px 1px 2px wheat;
+}
+
