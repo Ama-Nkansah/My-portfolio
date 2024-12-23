@@ -6,7 +6,7 @@ const logo1 = document.getElementById("logo");
 
 
 
-hamburgerButton.addEventListener("click", () => {
+$("#hamburger-button").click(function(){
   sideBar.classList.remove("hidden");
   sideBar.classList.add("flex");
   navBar.classList.add("pt-0","pr-0");
@@ -17,8 +17,10 @@ hamburgerButton.addEventListener("click", () => {
   closeButton.classList.add("flex");
 });
 
-closeButton.addEventListener("click", () => {
+$("#close-button").click(function(){
 sideBar.classList.add("hidden");
 hamburgerButton.classList.remove("hidden");
 hamburgerButton.classList.add("inline-flex","pr-10");
 });
+
+$("h1")
