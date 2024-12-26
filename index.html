@@ -24,7 +24,7 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" id="home" class="z-50 h-16">
+    <header id="home" class="topic z-50 h-16 w-full fixed shadow-lg top-0">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
@@ -83,7 +83,7 @@
         <div id="sidebar" class="hidden transition-all duration-1000">
           <div id="sidebar-css" class="w-96 h-screen rounded-sm z-10">
          <!-- my icon and close button-->
-          <div id="sidebar-navbar" class="flex justify-between p-3">
+          <div class="topic flex justify-between p-3">
             <a href="#home" class="inline-flex"
             ><i class="fa-solid fa-laptop pt-1"></i>
             <h3 class="pl-2">Ama</h3>
@@ -112,23 +112,33 @@
     </header>
 
     <!-- home section -->
-    <section id="home-section" class="min-h-screen">
+    <section class="background-img min-h-screen">
       <!-- my heading -->
       <div id="hero-content" class="h-screen flex">
         <div class="p-5 m-32 ">
-          <h1 id="welcome-message" class="text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950 text-shad ">Welcome to my Website</h1>
-         <h2 class="text-6xl font-serif font-normal">Hi,<span class="text-8xl animate__animated animate__bounce">Ama Nkansah</span> here</h2> 
-         <p id="my-work" class="font-serif text-center mt-2 text-2xl text-red-950 font-extralight">A software Engineer and a Content Creator </p>
+          <h1 class="heading-writings text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950 text-shad ">Welcome to my Website</h1>
+         <h2 class="text-6xl font-serif font-normal">Hi,<span class="text-8xl">Ama Nkansah</span> here</h2> 
+         <p class="heading-writings font-serif text-center mt-2 text-2xl text-red-950 font-extralight">A software Engineer and a Content Creator </p>
+          <!-- resume button -->
+         <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 mt-40 ml-60 animate__animated animate__fadeIn animation-duration:2s hover:bg-orange-700 ">
+          <a href="./documents/Ama Nkansah Resume.pdf" class="inline">
+          <p id="resume-link" class="text-2xl">View Resume<i class="fa-regular fa-file pl-3 "></i></p>
+        </a>
+          
+        </button>
+
         </div>
+    
         <div class="m-6 ml-2 flex justify-end">
           <img src="images/mine-pic.jpg" id="mine-image" class="p-3 sm:ml-52 lg:m-28 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
         </div>
+      
       </div>
     </section>
 
     <!-- about section -->
     <section id="about" class="m-10 grid">
-        <h1 id="about-heading" class="mb-8 text-5xl text-red-950 text-center">About Me</h1>
+        <h1 class="heading-writings mb-8 text-5xl text-red-950 text-center">About Me</h1>
         <div id="font-about" class="text-wrap grid grid-rows-1 grid-cols-3 gap-4">
           <p>
             As a software engineer with a strong focus on front-end development, 
@@ -153,81 +163,118 @@
 
       <!-- skills section -->
         <section id="skills" class="grid ">
-          <div id="skills-heading" class="h-auto">
-           <h1 id="skills-heading1" class="py-2 text-5xl text-red-950 text-center">Skills</h1>
+          <div class="topic h-auto">
+           <h1 class="heading-writings py-2 text-5xl text-red-950 text-center">Skills</h1>
           </div>
 
           <!--skills icons -->
           <div class="grid grid-rows-2 grid-cols-10 gap-4 ">
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-html5-plain-wordmark colored block text-7xl"></i>
+                 <i class="devicon-html5-plain-wordmark colored block text-7xl" aria-label="html"></i>
               </li>
             </ul>
 
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-css3-plain-wordmark colored block text-7xl"></i>
+                 <i class="devicon-css3-plain-wordmark colored block text-7xl" aria-label="css"></i>
               </li>
             </ul>
               
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-tailwindcss-plain-wordmark colored block text-7xl"></i>
+                 <i class="devicon-tailwindcss-plain-wordmark colored block text-7xl" aria-label="tailwind"></i>
               </li>
             </ul>
               
             <ul class="list-none m-5">
               <li>
-                <i class="devicon-bootstrap-plain-wordmark colored block text-7xl"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored block text-7xl" aria-label="bootstrap"></i>
               </li>
             </ul>
               
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-javascript-plain colored block text-7xl"></i>
+                 <i class="devicon-javascript-plain colored block text-7xl" aria-label="javascript"></i>
               </li>
             </ul>
               
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-jquery-plain-wordmark colored block text-7xl"></i>
+                 <i class="devicon-jquery-plain-wordmark colored block text-7xl" aria-label="jquery"></i>
               </li>
             </ul>
 
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-react-original-wordmark colored block text-7xl"></i>
+                 <i class="devicon-react-original-wordmark colored block text-7xl" aria-label="react"></i>
               </li>
             </ul>
 
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-nodejs-plain-wordmark colored block text-7xl"></i>
+                 <i class="devicon-nodejs-plain-wordmark colored block text-7xl" aria-label="nodejs"></i>
               </li>
             </ul>
 
             <ul class="list-none m-5">
               <li>
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"/>
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git"/>
               </li>
             </ul>
             
             <ul class="list-none m-5">
               <li>
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux" />
               </li>
             </ul>
 
             <ul class="list-none m-5">
               <li>
-                 <i class="devicon-github-original-wordmark colored block text-7xl"></i>
+                 <i class="devicon-github-original-wordmark colored block text-7xl" aria-label="devicon-github-original-wordmark"></i>
               </li>
             </ul>
 
           </div>
+        </section>
+
+        <!-- projects section -->
+        <section class="background-img">
+          <div class="topic h-auto">
+            <h1 class="heading-writings py-2 text-5xl text-red-950 text-center">Projects</h1>
+          </div>
+
+          <!-- Portfolio project -->
+          <div class="grid grid-cols-4 grid-rows-2 gap-4">
+
+            <div class="projects-container p-20 m-4 flex justify-center">
+               <p>My Portfolio</p>
+            </div>
+
+             <!--Calculator project -->
+             <div class="projects-container p-20 m-4 flex justify-center">
+              <p>Calculator</p>
+             </div>
+
+              <!--To-do list project -->
+            <div class="projects-container p-20 m-4 flex justify-center">
+              <p>To-do list</p>
+            </div>
+
+              <!--memes website -->
+            <div class="projects-container p-20 m-4 flex justify-center">
+              <p>Memes Website</p>
+            </div>
+
+            <!--Youtube Clone -->
+            <div class="projects-container p-20 m-4 flex justify-center">
+              <p>Youtube Clone</p>
+            </div>
+          </div>
+
 
         </section>
+
       
 
 

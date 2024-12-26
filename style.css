@@ -1,21 +1,12 @@
-#header{
+.topic{
   background-color:#FF885B;
 }
 
 #sidebar-css{
   background-color:#FFE5CF;
-  
 }
 
-#sidebar-navbar{
-  background-color:#FF885B;
-}
-
-#welcome-message{
-  text-shadow: 1px 1px 2px wheat;
-}
-
-#my-work{
+.heading-writings{
   text-shadow: 1px 1px 2px wheat;
 }
 
@@ -34,14 +25,14 @@
   height:400px
 }
 
-#home-section{
+.background-img{
   background-image: url(./images/coconut\ pattern.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#about-heading{
-  text-shadow: 1px 1px 2px wheat;
+#resume-link{
+  
 }
 
 #font-about{
@@ -50,11 +41,6 @@
   font-style: normal;
 }
 
-#skills-heading{
-  background-color:#FF885B;
+.projects-container{
+  background-color:#FFE5CF;
 }
-
-#skills-heading1{
-  text-shadow: 1px 1px 2px wheat;
-}
-
