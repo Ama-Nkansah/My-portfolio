@@ -4,11 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Read More Panel</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 </head>
-<body>
+<body class="bg-slate-400">
   <!-- Portfolio Read more -->
-   <div>
-     
+   <div class="flex p-5">
+     <h1 id="project-title" class="bg-orange-400 pt-5 justify-center">Project title</h1>
+     <p id="project-description">My Content</p>
+     <button>
+      <a href="./index.html">Previous Page</a>
+     </button>
    </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+     $(document).ready(function(){
+      const projectDetails ={
+        1: {
+      title: '<h1 class ="flex text-2xl m-5 justify-center"><strong>Ama.dev</strong><h1/>',
+      description: `
+      <p class="text-lg">My portfolio website is designed to showcase my fundamental skills as a front-end developer.<br/>
+      It highlights my proficiency in web development and demonstrates my ability to create responsive,
+      interactive, and visually appealing websites.
+      <p/>
+    
+
+      <h3 class="text-xl m-4 justify-center"><strong>Skills:</strong></h3>
+      <ul class="text-lg">
+        <li><strong>HTML:</strong> Building the structure and layout of web pages with semantic elements.</li>
+        <li><strong>CSS:</strong> Crafting responsive designs, animations, and layouts with frameworks(tailwind css) to ensure optimal user experiences across devices.</li>
+        <li><strong>JavaScript:</strong> Adding dynamic functionality and interactivity to web pages.</li>
+        <li><strong>jQuery:</strong> Simplifying DOM manipulation, event handling, and animations to enhance efficiency.</li>
+      </ul>
+      <br/>
+
+      <h3 class="text-xl m-4"><strong>Key Features:</strong></h3>
+      <ul class="text-lg">
+        <li><strong>Responsive Design – </strong>Adaptable across desktops, tablets, and mobile devices.</li>
+        <li><strong>Dynamic Interactivity –</strong> Features like modals, tooltips, and smooth scrolling.</li>
+        <li><strong>Clean Code – </strong>Organized, maintainable, and reusable codebase following best practices.</li>
+        <li><strong>Enhanced UI –</strong> Aesthetic design elements crafted using Tailwind CSS for seamless integration.</li>
+        <li><strong>Organized Sections –</strong> Includes Home, About, Skills, and Testimonials, with plans for a Call-to-Action button.</li>
+        <li><strong>Performance Optimized –</strong> Lightweight and fast-loading, ensuring an excellent user experience.</li>
+      </ul>`
+    },
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('project'); 
+
+  if (projectDetails[projectId]) {
+    const project = projectDetails[projectId];
+
+    // Update the title and description
+    $('#project-title').html(project.title);
+    $('#project-description').html(project.description);
+  } else {
+    // Handle invalid project ID
+    $('#project-title').text('Project Not Found');
+    $('#project-description').text('The project you are looking for does not exist.');
+  }
+ });
+</script>
+
+
+
+
 </body>
 </html>
