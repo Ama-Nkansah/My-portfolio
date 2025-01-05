@@ -24,7 +24,7 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="home" class="topic z-50 h-16 w-full fixed shadow-lg top-0">
+    <header id="header" class="topic z-50 h-16 w-full fixed shadow-lg top-0">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
@@ -105,7 +105,7 @@
     </header>
 
     <!-- home section -->
-    <section class="background-img min-h-screen">
+    <section id="home" class="background-img min-h-screen">
       <!-- my heading -->
       <div id="hero-content" class="h-screen flex">
         <div class="p-5 m-32 ">
@@ -120,7 +120,6 @@
         </button>
 
         </div>
-    
         <div class="m-6 ml-2 flex justify-end">
           <img src="images/mine-pic.jpg" id="mine-image" class="p-3 sm:ml-52 lg:m-28 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
         </div>
@@ -227,17 +226,23 @@
               </li>
             </ul>
 
+            <ul class="list-none m-5">
+              <li>
+                 <i class="devicon-bash-plain colored block text-7xl" aria-label="devicon-github-original-wordmark"></i>
+              </li>
+            </ul>
+
           </div>
         </section>
 
         <!-- projects section -->
-        <section class="background-img">
+        <section id="projects" class="background-img">
           <div class="topic h-auto">
             <h1 class="heading-writings py-2 text-5xl text-red-950 text-center">Projects</h1>
           </div>
 
           <!-- Portfolio project -->
-          <div class="grid grid-cols-4 grid-rows-2 gap-4">
+          <div class="grid grid-cols-4 grid-rows-1 gap-4">
 
             <div class="projects-container p-1 m-4">
               <div class="size-fit">
@@ -312,11 +317,13 @@
         </section>
 
         <!-- contact section -->
-        <section class="">
-       
-
-
-
+        <section id="contact">
+         <h1 class="heading-writings py-2 text-4xl text-red-950 text-center">Get In Touch</h1>
+         <form action="#" class="grid grid-rows-2 grid-cols-2 gap-4 m-6">
+          <input type="text" name="name" placeholder="Enter your name" class="text-xl bg-gray-100 border-2">
+          <input type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2">
+          <textarea name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2"></textarea> 
+         </form>
         </section>
       
 
