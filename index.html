@@ -317,18 +317,18 @@
         </section>
 
         <!-- contact section -->
-      <section id="contact-form">
+      <section>
          <h1 class="heading-writings py-2 text-4xl text-red-950 text-center">Get In Touch</h1>
-         <form action="#" class="grid grid-rows-2 grid-cols-2 gap-4 m-6">
-          <input type="text" name="name" placeholder="Enter your name" class="text-xl bg-gray-100 border-2">
-          <input type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2">
-          <textarea name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2"></textarea> 
-         </form>
-         <div class="flex justify-center">
-          <button id="sidebar-css" class="border-2 rounded-md border-red-950 p-1 shadow-lg shadow-orange-500/50 text-xl">
+         <form id="contact-form" class="grid grid-rows-2 grid-cols-2 gap-4 m-6">
+          <input id="name" type="text" name="name" placeholder="Enter your name" class="text-xl bg-gray-100 border-2">
+          <input id="email" type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2">
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2"></textarea> 
+          <div class="flex justify-center col-span-2">
+          <button type="submit" id="sidebar-css" class="border-2 rounded-md border-red-950 p-1 shadow-lg shadow-orange-500/50 text-xl active:shadow-inner">
           Submit
          </button>
-      </div>
+        </div>
+        </form>
       </section>
       
       <footer class="flex justify-center">
