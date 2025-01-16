@@ -23,4 +23,26 @@ hamburgerButton.classList.remove("hidden");
 hamburgerButton.classList.add("inline-flex","pr-10");
 });
 
-$("h1")
+$(document).ready(function(){
+  $('#contact-form').on('submit',function(e){
+
+  });
+
+}
+});
+
+/*
+$(document).ready(function() {
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault(); // Prevent page reload
+        const message = $('#message').val(); // Get the message value
+        if (message.trim() === '') {
+            alert('Please type a message!');
+        } else {
+            alert(`Message received: ${message}`);
+            $('#message').val(''); // Clear the message area
+        }
+    });
+});
+
+*/ 
