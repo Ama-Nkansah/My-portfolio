@@ -105,23 +105,23 @@
     </header>
 
     <!-- home section -->
-    <section id="home" class="background-img min-h-screen flex">
+    <section id="home" class="background-img flex flex-col">
+      <!-- my image -->
+    <div class="m-3 ml-2 flex justify-center">
+      <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 animate__animated animate__fadeInRight animate__slow	0.2s">
+    </div>
       <!-- my heading -->
       <div id="hero-content" class="h-screen ">
-        <div class="p-5 m-32 ">
-          <h1 class="heading-writings text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950 text-shad ">Welcome to my Website</h1>
-         <h2 class="text-6xl sm:text-3xl font-serif font-normal">Hi,<span class="text-8xl sm:text-4xl">Ama Nkansah</span> here</h2> 
-         <p class="heading-writings font-serif text-center mt-3 text-2xl text-red-950 font-extralight">A software Engineer and a Content Creator </p>
+        <div class="p-5 m-5 ">
+          <h1 class="heading-writings text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950">Welcome to my Website</h1>
+         <h2 class="text-6xl sm:text-4xl font-serif font-normal ml-20">Hi,<span class="text-8xl sm:text-5xl">Ama Nkansah</span> here</h2> 
+         <p class="heading-writings font-serif text-center mt-3 text-2xl text-red-950 font-extralight sm:text-xl">A software Engineer and a Content Creator </p>
           <!-- resume button -->
-         <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 mt-36 ml-60 animate__animated animate__fadeIn animation-duration:2s">
+         <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 m-20 ml-36 animate__animated animate__fadeIn animation-duration:2s">
           <a href="./documents/Ama Nkansah Resume.pdf" class="inline">
           <p id="resume-link" class="text-2xl text-black rounded-full p-1 px-2 hover:bg-gray-200">View Resume<i class="fa-regular fa-file pl-3 "></i></p>
         </a>
         </button>
-        <!-- my image -->
-        </div>
-        <div class="m-6 ml-2 justify-end sm:justify-center">
-          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
         </div>
       </div>
     </section>
@@ -152,13 +152,13 @@
       </section>
 
       <!-- skills section -->
-        <section id="skills" class="grid ">
+        <section id="skills">
           <div class="topic h-auto">
            <h1 class="heading-writings py-2 text-5xl text-red-950 text-center">Skills</h1>
           </div>
 
           <!--skills icons -->
-          <div class="grid grid-rows-2 grid-cols-10 gap-4 ">
+          <div class="grid grid-rows-2 grid-cols-10 gap-4 sm:grid-cols-4">
             <ul class="list-none m-5">
               <li>
                  <i class="devicon-html5-plain-wordmark colored block text-7xl" aria-label="html"></i>
