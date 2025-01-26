@@ -24,7 +24,7 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" class="topic z-50 h-16 w-full fixed shadow-lg top-0">
+    <header id="header" class="topic z-50 h-16 w-full shadow-lg top-0">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
@@ -66,7 +66,7 @@
         </div>
 
         <!--Hamburger icon-->
-        <div class="flex lg:hidden">
+        <div class="flex lg:hidden z-30">
           <button title="menu" type="button"
             id="hamburger-button"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-4 text-red-950"
@@ -105,12 +105,12 @@
     </header>
 
     <!-- home section -->
-    <section id="home" class="background-img min-h-screen">
+    <section id="home" class="background-img min-h-screen flex">
       <!-- my heading -->
-      <div id="hero-content" class="h-screen flex">
+      <div id="hero-content" class="h-screen ">
         <div class="p-5 m-32 ">
           <h1 class="heading-writings text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950 text-shad ">Welcome to my Website</h1>
-         <h2 class="text-6xl font-serif font-normal">Hi,<span class="text-8xl">Ama Nkansah</span> here</h2> 
+         <h2 class="text-6xl sm:text-3xl font-serif font-normal">Hi,<span class="text-8xl sm:text-4xl">Ama Nkansah</span> here</h2> 
          <p class="heading-writings font-serif text-center mt-3 text-2xl text-red-950 font-extralight">A software Engineer and a Content Creator </p>
           <!-- resume button -->
          <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 mt-36 ml-60 animate__animated animate__fadeIn animation-duration:2s">
@@ -118,12 +118,11 @@
           <p id="resume-link" class="text-2xl text-black rounded-full p-1 px-2 hover:bg-gray-200">View Resume<i class="fa-regular fa-file pl-3 "></i></p>
         </a>
         </button>
-
+        <!-- my image -->
         </div>
-        <div class="m-6 ml-2 flex justify-end">
-          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 sm:ml-52 lg:m-28 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
+        <div class="m-6 ml-2 justify-end sm:justify-center">
+          <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 h-2/5 sm:h-auto w-full sm:w-4/5 animate__animated animate__fadeInRight animate__slow	0.2s">
         </div>
-      
       </div>
     </section>
 
