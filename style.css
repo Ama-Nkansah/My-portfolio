@@ -22,13 +22,14 @@
  } 
 
 #mine-image{
-  height:400px
+  height:300px;
 }
 
 .background-img{
   background-image: url(./images/coconut\ pattern.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+
 }
 
 #font-about{
@@ -39,4 +40,10 @@
 
 .projects-container{
   background-color:#FFE5CF;
+}
+
+@media (min-width: 640px)and (max-width: 768px) {
+  span{ 
+    font-weight: 400;
+   }  
 }
