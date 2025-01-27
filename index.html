@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Marck+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header id="header" class="topic z-50 h-16 w-full shadow-lg top-0">
       <nav
         aria-label="Global"
@@ -108,16 +108,16 @@
     <section id="home" class="background-img flex flex-col">
       <!-- my image -->
     <div class="m-3 ml-2 flex justify-center">
-      <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 animate__animated animate__fadeInRight animate__slow	0.2s">
+      <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 animate__animated animate__fadeInRight animate__slow	0.2s sm:mt-12">
     </div>
       <!-- my heading -->
-      <div id="hero-content" class="h-screen ">
+      <div id="hero-content">
         <div class="p-5 m-5 ">
           <h1 class="heading-writings text-5xl animate__animated animate__backInDown animate__slow	0.1s mb-10 font-serif font-normal text-center text-red-950">Welcome to my Website</h1>
          <h2 class="text-6xl sm:text-4xl font-serif font-normal ml-20">Hi,<span class="text-8xl sm:text-5xl">Ama Nkansah</span> here</h2> 
-         <p class="heading-writings font-serif text-center mt-3 text-2xl text-red-950 font-extralight sm:text-xl">A software Engineer and a Content Creator </p>
+         <p class="heading-writings font-serif text-center sm:mt-5 text-2xl text-red-950 font-extralight sm:text-xl">A software Engineer and a Content Creator </p>
           <!-- resume button -->
-         <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 m-20 ml-36 animate__animated animate__fadeIn animation-duration:2s">
+         <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-2 px-3 shadow-lg shadow-orange-500/50 ml-48 animate__animated animate__fadeIn animation-duration:2s sm:mt-36 sm:m-56 ">
           <a href="./documents/Ama Nkansah Resume.pdf" class="inline">
           <p id="resume-link" class="text-2xl text-black rounded-full p-1 px-2 hover:bg-gray-200">View Resume<i class="fa-regular fa-file pl-3 "></i></p>
         </a>
@@ -241,10 +241,10 @@
           </div>
 
           <!-- Portfolio project -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
             <div class="projects-container p-1 m-1">
-              <div class="size-fit">
+              <div class="object-scale-down">
                <img src="./images/portfolio-pic.png">
               </div>
               <div class="project bg-black text-white rounded-xl p-1 max-h-fit" id="1">

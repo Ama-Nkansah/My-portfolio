@@ -28,8 +28,7 @@
 .background-img{
   background-image: url(./images/coconut\ pattern.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 100%;
+  background-size: auto;
 }
 
 #font-about{
