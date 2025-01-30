@@ -44,6 +44,6 @@
 
 @media (min-width: 640px)and (max-width: 768px) {
   span{ 
-    font-weight: 400;
+    font-size: 50px;
    }  
 }
