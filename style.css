@@ -61,3 +61,9 @@
     height: 60px;
    }  
 }
+@media (min-width: 1024px){
+  #mine-image{ 
+    height: 550px;
+    margin-right: 20px;
+   }  
+}
