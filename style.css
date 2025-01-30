@@ -47,3 +47,17 @@
     font-size: 50px;
    }  
 }
+
+@media (min-width: 768px)and (max-width: 1024px) {
+  span{ 
+    font-size: 65px;
+   }  
+   #mine-image{
+    height:450px;
+  }
+}
+@media (min-width: 580px){
+  #icons-img{ 
+    height: 60px;
+   }  
+}

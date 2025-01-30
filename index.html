@@ -25,7 +25,7 @@
         </div>
 
         <!--navigation links shown on bigger screens but hidden on smaller screens-->
-        <div class="hidden lg:flex justify-center md:gap-x-10 lg:gap-x-12">
+        <div class="hidden md:flex justify-center md:gap-x-10 lg:gap-x-12">
           <a
             href="#home"
             class="text-sm/6 font-semibold text-red-950 hover:bg-gray-50 p-1 rounded-sm"
@@ -55,7 +55,7 @@
         </div>
 
         <!--Hamburger icon-->
-        <div class="flex lg:hidden z-30">
+        <div class="flex md:hidden z-30">
           <button title="menu" type="button"
             id="hamburger-button"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-4 text-red-950"
@@ -96,19 +96,19 @@
     <!-- home section -->
     <section id="home" class="background-img flex flex-col">
       <!-- my image -->
-    <div class="m-3 ml-2 flex justify-center">
+    <div class="m-3 ml-2 flex justify-center md:mt-5">
       <img src="images/mine-pic.jpg" id="mine-image" class="p-3 rounded-full border-double border-red-950 border-4 animate__animated animate__fadeInRight animate__slow	0.2s">
     </div>
       <!-- my heading -->
       <div id="hero-content">
         <div class="p-5 m-5 ">
-          <h1 class="heading-writings text-2xl animate__animated animate__backInDown animate__slow	0.1s mb-5 font-serif font-normal text-center text-red-950 sm:text-5xl sm:mt-5">Welcome to my Website</h1>
-         <h2 class="text-2xl  font-serif font-normal mx-10 sm:mx-[150px] sm:text-4xl ">Hi,<span>Ama Nkansah</span> here</h2> 
-         <p class="heading-writings font-serif text-center mt-5 text-lg text-red-950 font-extralight sm:text-2xl sm:mt-12">Software Engineer||Content Creator</p>
+          <h1 class="heading-writings text-2xl animate__animated animate__backInDown animate__slow	0.1s mb-5 font-serif font-normal text-center text-red-950 sm:text-5xl sm:mt-5 md:text-6xl">Welcome to my Website</h1>
+         <h2 class="text-2xl  font-serif font-normal mx-10 sm:mx-[150px] sm:text-4xl md:text-5xl md:mt-10">Hi,<span>Ama Nkansah</span> here</h2> 
+         <p class="heading-writings font-serif text-center mt-5 text-lg text-red-950 font-extralight sm:text-2xl sm:mt-12 md:text-4xl md:mt-16">Software Engineer||Content Creator</p>
           <!-- resume button -->
-         <button id="sidebar-css" class="flex border-2 mt-5 ml-28 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 animate__animated animate__fadeIn animation-duration:2s sm:mt-15 sm:m-60 ">
+         <button id="sidebar-css" class="flex border-2 mt-5 ml-28 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 animate__animated animate__fadeIn animation-duration:2s sm:mt-15 sm:m-60 md:mt-20 md:m-70">
           <a href="./documents/Ama Nkansah Resume.pdf" class="inline">
-          <p id="resume-link" class="text-xs text-black rounded-full p-1 hover:bg-gray-200">View Resume<i class="fa-regular fa-file pl-3 "></i></p>
+          <p id="resume-link" class="text-xs text-black rounded-full p-1 hover:bg-gray-200 md:text-xl md:p-3">View Resume<i class="fa-regular fa-file pl-3"></i></p>
         </a>
         </button>
         </div>
@@ -147,7 +147,7 @@
           </div>
 
           <!--skills icons -->
-          <div class="grid grid-cols-4 gap-4">
+          <div class="grid grid-cols-4 gap-4 md:grid-cols-5">
             <ul class="list-none m-5">
               <li>
                  <i class="devicon-html5-plain-wordmark colored block text-5xl" aria-label="html"></i>
@@ -198,13 +198,13 @@
 
             <ul class="list-none m-5">
               <li>
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git"/>
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git" id="icons-img"/>
               </li>
             </ul>
             
             <ul class="list-none m-5">
               <li>
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux" />
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux" id="icons-img"/>
               </li>
             </ul>
 
@@ -232,25 +232,25 @@
           <!-- Portfolio project -->
           <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-            <div class="projects-container p-1 m-1">
+            <div class="projects-container p-1 m-4 h-fit">
               <div class="object-scale-down">
-               <img src="./images/portfolio-pic.png">
+               <img src="./images/portfolio-pic.png" class="h-35">
               </div>
-              <div class="project bg-black text-white rounded-xl p-1 max-h-fit" id="1">
+              <div class="project bg-black text-white rounded-xl p-1 ">
                 <div>
-                <h1 class="font-bold ml-28 pt-2 text-violet-300 rounded-xl p-1">Ama.dev</h1>
+                <h1 class="font-bold max-sm:mx-20 pt-2 text-violet-300 rounded-xl p-1 sm:mx-25 md:mx-15">Ama.dev</h1>
                 </div>
                  
                  <p class="font-mono p-2">
                   My first personal website built with HTML,CSS,JavaScript and other frameworks to showcase my fundamentals in Web
                    development .
                  </p>
-                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 ml-14 animate__animated animate__fadeIn animation-duration:2s">
+                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-15 animate__animated animate__fadeIn animation-duration:2s">
                    <a href="./read-more.html?project=1" class="inline">
                      <p class="text-black rounded-full p-1 hover:bg-gray-200">Demo</p>
                   </a>
                   </button>
-                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 ml-14 animate__animated animate__fadeIn animation-duration:2s">
+                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-15 animate__animated animate__fadeIn animation-duration:2s">
                     <a href="https://github.com/Ama-Nkansah/My-portfolio" class="inline">
                       <p id="resume-link" class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                    </a>
@@ -260,19 +260,19 @@
             </div>
           
              <!--Internship project -->
-              <div class="projects-container p-1 m-4">
+              <div class="projects-container p-1 m-4 h-fit">
                 <div class="size-fit">
                  <img src="./images/internship project combined.jpg" class="h-52 w-screen">
                 </div>
                 <div class="project bg-black text-white rounded-xl" id="1">
                   <div>
-                  <h1 class="font-bold ml-20 pt-2 text-violet-300 rounded-xl p-1">Internship Projects</h1>
+                  <h1 class="font-bold ml-20 pt-2 text-violet-300 rounded-xl p-1 md:mx-5">Internship Projects</h1>
                   </div>
                    
                    <p class="font-mono p-2">
                     Completed web development projects during my remote internship at Go2Cod, using HTML, CSS, and JavaScript.
                    </p>
-                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-28 animate__animated animate__fadeIn animation-duration:2s">
+                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-28 animate__animated animate__fadeIn animation-duration:2s md:mx-20">
                       <a href="https://github.com/Ama-Nkansah/Codxo-combined-repo" class="inline">
                         <p class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                      </a>
@@ -282,18 +282,18 @@
               </div>
 
             <!--web development bootcamp  -->
-              <div class="projects-container p-1 m-4">
+              <div class="projects-container p-1 m-4 h-fit">
                 <div class="size-fit">
                  <img src="./images/web  development  cover img.jpg" class="h-52 w-screen">
                 </div>
                 <div class="project bg-black text-white pb-5 rounded-xl" id="1">
                   <div>
-                  <h1 class="font-bold ml-12 pt-2 rounded-xl text-violet-300 p-1">Web development Bootcamp</h1>
+                  <h1 class="font-bold ml-12 pt-2 rounded-xl text-violet-300 p-1 md:mx-5">Web development Bootcamp</h1>
                   </div>
                    <p class="font-mono p-2">
                     Enrolled in a web development bootcamp, learning and building projects.
                    </p>
-                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 mt-6 mx-32 animate__animated animate__fadeIn animation-duration:2s">
+                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 mt-6 mx-32 animate__animated animate__fadeIn animation-duration:2s md:mx-20">
                       <a href="https://github.com/Ama-Nkansah/Web-development-Bootcamp" class="inline">
                         <p class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                      </a>
@@ -308,9 +308,9 @@
       <section>
          <h1 class="heading-writings py-2 text-4xl text-red-950 text-center">Get In Touch</h1>
          <form id="contact-form" class="grid grid-rows-2 grid-cols-2 gap-4 m-6">
-          <input id="name" type="text" name="name" placeholder="Enter your name" class="text-xl bg-gray-100 border-2">
-          <input id="email" type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2">
-          <textarea id="message" name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2"></textarea> 
+          <input id="name" type="text" name="name" placeholder="Enter your name" class="text-xl bg-gray-100 border-2 p-3">
+          <input id="email" type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2 p-3">
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2 p-3"></textarea> 
           <div class="flex justify-center col-span-2">
           <button type="submit" id="sidebar-css" class="border-2 rounded-md border-red-950 p-1 shadow-lg shadow-orange-500/50 text-xl active:shadow-inner">
           Submit
@@ -322,12 +322,12 @@
       <footer>
         <h4 class="m-3 max-sm:mx-10 sm:pl-15">Built by <span class="text-center">Ama Nkansah</span>© 2024. All rights reserved</h4>
         
-       <div class="m-2 pl-44 mt-4 flex sm:pb-10 sm:pl-75">
+       <div class="m-2 pl-44 mt-4 flex sm:pb-10 sm:pl-75 md:mt-6 md:mx-18">
         <a href="https://www.linkedin.com/in/ama-nkansah-akuoko/">  
-          <i class="devicon-linkedin-plain colored text-2xl m-1"></i>
+          <i class="devicon-linkedin-plain colored text-2xl m-1 md:text-4xl"></i>
         </a>
         <a href="https://github.com/Ama-Nkansah">
-          <i class="devicon-github-original colored text-2xl m-1"></i>
+          <i class="devicon-github-original colored text-2xl m-1 md:text-4xl"></i>
         </a>
       </div>
       </footer>
