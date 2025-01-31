@@ -65,5 +65,8 @@
   #mine-image{ 
     height: 550px;
     margin-right: 20px;
+   } 
+   span{ 
+    font-size: 65px;
    }  
 }
