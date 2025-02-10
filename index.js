@@ -3,7 +3,7 @@ const hamburgerButton = document.getElementById("hamburger-button");
 const closeButton = document.getElementById("close-button");
 const navBar = document.getElementById("nav");
 const logo1 = document.getElementById("logo");
-
+const navlinks = document.getElementsByClassName("clickable");
 
 
 $("#hamburger-button").click(function(){
@@ -20,6 +20,12 @@ $("#hamburger-button").click(function(){
 $("#close-button").click(function(){
 sideBar.classList.add("hidden");
 hamburgerButton.classList.remove("hidden");
+hamburgerButton.classList.add("inline-flex","pr-10");
+});
+
+// when any of the links is clicked on the sidebar
+$(".clickable").click(function(){
+sideBar.classList.add("hidden");
 hamburgerButton.classList.add("inline-flex","pr-10");
 });
 
