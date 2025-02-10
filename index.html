@@ -65,10 +65,9 @@
         </div>
 
         <!-- sidebar for smaller screens-->
-        <div id="sidebar" class="hidden transition-all duration-1000">
-          <div id="sidebar-css" class="w-96 h-screen rounded-sm z-10">
+        <div id="sidebar" class="hidden transition-all duration-1000 w-screen h-screen rounded-sm z-10">
          <!-- my icon and close button-->
-          <div class="topic flex justify-between p-3 h-16">
+          <div class="topic flex justify-between w-full p-3 h-16">
             <a href="#home" class="inline-flex"
             ><i class="fa-solid fa-laptop pt-1"></i>
             <h3 class="pl-2">Ama</h3>
@@ -80,14 +79,13 @@
          </div>
 
          <div>
-            <ul class="flex flex-col space-y-4 pt-4 ">
+            <ul class="flex flex-col space-y-4 pt-4 relative right-50 top-15 ">
               <li><a href="#home" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Home</a></li>
               <li><a href="#about" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">About</a></li>
               <li><a href="#skills" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Skills</a></li>
               <li><a href="#projects" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Projects</a></li>
               <li><a href="#contact" class=" text-red-950 hover:bg-gray-50 p-1 rounded-sm">Contact</a></li>
             </ul>
-          </div>
           </div>
         </div>
       </nav>
@@ -103,7 +101,7 @@
          <h2 class="text-2xl  font-serif font-normal mx-10 sm:mx-[150px] sm:text-4xl md:text-5xl md:mt-10">Hi,<span>Ama Nkansah</span> here</h2> 
          <p class="heading-writings font-serif text-center mt-5 text-lg text-red-950 font-extralight sm:text-2xl sm:mt-12 md:text-4xl md:mt-16">Software Engineer||Content Creator</p>
           <!-- resume button -->
-         <button id="sidebar-css" class="flex border-2 mt-5 ml-23 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 animate__animated animate__fadeIn animation-duration:2s sm:mt-15 sm:m-60 md:mt-20 md:m-70">
+         <button id="sidebar" class="flex border-2 mt-5 ml-23 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 animate__animated animate__fadeIn animation-duration:2s sm:mt-15 sm:m-60 md:mt-20 md:m-70">
           <a href="./documents/Ama Nkansah Resume.pdf" class="inline">
           <p id="resume-link" class="text-xs text-black rounded-full p-1 hover:bg-gray-200 md:text-xl md:p-3">View Resume<i class="fa-regular fa-file pl-3"></i></p>
         </a>
@@ -248,12 +246,12 @@
                   My first personal website built with HTML,CSS,JavaScript and other frameworks to showcase my fundamentals in Web
                    development .
                  </p>
-                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-10 animate__animated animate__fadeIn animation-duration:2s lg:mx-30">
+                  <button id="sidebar" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-10 animate__animated animate__fadeIn animation-duration:2s lg:mx-30">
                    <a href="./read-more.html?project=1" class="inline">
                      <p class="text-black rounded-full p-1 hover:bg-gray-200">Demo</p>
                   </a>
                   </button>
-                  <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 ml-5 animate__animated animate__fadeIn animation-duration:2s lg:mx-30">
+                  <button id="sidebar" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 ml-5 animate__animated animate__fadeIn animation-duration:2s lg:mx-30">
                     <a href="https://github.com/Ama-Nkansah/My-portfolio" class="inline">
                       <p id="resume-link" class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                    </a>
@@ -275,7 +273,7 @@
                    <p class="font-mono p-2">
                     Completed web development projects during my remote internship at Go2Cod, using HTML, CSS, and JavaScript.
                    </p>
-                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-28 animate__animated animate__fadeIn animation-duration:2s md:mx-20 lg:mx-28">
+                    <button id="sidebar" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 my-2 mx-28 animate__animated animate__fadeIn animation-duration:2s md:mx-20 lg:mx-28">
                       <a href="https://github.com/Ama-Nkansah/Codxo-combined-repo" class="inline">
                         <p class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                      </a>
@@ -296,7 +294,7 @@
                    <p class="font-mono p-2">
                     Enrolled in a web development bootcamp, learning and building projects.
                    </p>
-                    <button id="sidebar-css" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 mt-6 mx-32 animate__animated animate__fadeIn animation-duration:2s md:mx-20 lg:mx-30">
+                    <button id="sidebar" class="border-2 border-red-950 rounded-full p-1 shadow-lg shadow-orange-500/50 mt-6 mx-32 animate__animated animate__fadeIn animation-duration:2s md:mx-20 lg:mx-30">
                       <a href="https://github.com/Ama-Nkansah/Web-development-Bootcamp" class="inline">
                         <p class="text-black rounded-full p-1 hover:bg-gray-200">Source</p>
                      </a>
@@ -315,7 +313,7 @@
           <input id="email" type="text" name="name" placeholder="E-mail Address" class="text-xl bg-gray-100 border-2 p-3">
           <textarea id="message" name="message" placeholder="Write your message here..." rows="3" cols="30" class="col-span-2 text-xl bg-gray-100 border-2 p-3"></textarea> 
           <div class="flex justify-center col-span-2">
-          <button type="submit" id="sidebar-css" class="border-2 rounded-md border-red-950 p-1 shadow-lg shadow-orange-500/50 text-xl active:shadow-inner">
+          <button type="submit" id="sidebar" class="border-2 rounded-md border-red-950 p-1 shadow-lg shadow-orange-500/50 text-xl active:shadow-inner">
           Submit
          </button>
         </div>
