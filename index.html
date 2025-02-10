@@ -13,7 +13,7 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body class="overflow-x-hidden">
-    <header id="header" class="topic z-50 h-16 w-screen shadow-lg top-0 fixed">
+    <header id="header" class="topic z-50 h-16 w-screen shadow-lg fixed top-0">
       <nav
         aria-label="Global"
         class="flex items-center justify-between p-4 md:px-8" id="nav"
@@ -65,9 +65,9 @@
         </div>
 
         <!-- sidebar for smaller screens-->
-        <div id="sidebar" class="hidden transition-all duration-1000 w-screen h-screen rounded-sm z-10">
+        <div id="sidebar" class="hidden transition-all duration-1000 w-screen h-screen rounded-sm z-10 relative right-27">
          <!-- my icon and close button-->
-          <div class="topic flex flex-1 justify-between w-full p-3 h-16">
+          <div class="topic flex flex-1 justify-between w-screen p-3 h-16 absolute">
             <a href="#home" class="inline-flex"
             ><i class="fa-solid fa-laptop pt-1"></i>
             <h3 class="pl-2">Ama</h3>
@@ -77,16 +77,15 @@
               <i class="fa-solid fa-square-xmark"></i>
             </div>
          </div>
-
-         <div>
-            <ul class="flex flex-col space-y-4 pt-4 relative right-50 top-15 ">
+           <!-- nav links -->
+            <ul class="flex flex-col space-y-4 pt-4 relative left-8 top-16 ">
               <li><a href="#home" class="clickable text-red-950 hover:bg-gray-50 p-1 rounded-sm">Home</a></li>
               <li><a href="#about" class="clickable text-red-950 hover:bg-gray-50 p-1 rounded-sm">About</a></li>
               <li><a href="#skills" class="clickable text-red-950 hover:bg-gray-50 p-1 rounded-sm">Skills</a></li>
               <li><a href="#projects" class="clickable text-red-950 hover:bg-gray-50 p-1 rounded-sm">Projects</a></li>
               <li><a href="#contact" class="clickable text-red-950 hover:bg-gray-50 p-1 rounded-sm">Contact</a></li>
             </ul>
-          </div>
+          
         </div>
       </nav>
     </header>
